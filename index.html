@@ -647,10 +647,10 @@ body{background:#0d1117;font-family:'Source Sans 3','Liberation Sans',sans-serif
 <script>
 /* mise a l'echelle : la planche 1920x1080 tient dans la fenetre (telephone, portable) */
 (function fit(){
-  if (window.innerWidth < 1900) document.body.style.zoom = window.innerWidth / 1940;
+  if (window.innerWidth < 1900) document.body.style.zoom = (window.innerWidth - 24) / 1920;
 })();
 window.addEventListener('resize', function(){
-  document.body.style.zoom = window.innerWidth < 1900 ? window.innerWidth / 1940 : 1;
+  document.body.style.zoom = window.innerWidth < 1900 ? (window.innerWidth - 24) / 1920 : 1;
 });
 </script>
 </body></html>
