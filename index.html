@@ -391,7 +391,8 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#0d1117;font-family:'Source Sans 3','Liberation Sans',sans-serif;
-     -webkit-font-smoothing:antialiased}
+     -webkit-font-smoothing:antialiased;display:flex;flex-direction:column;
+     align-items:center;gap:20px;padding:20px 0}
 .slide{width:1920px;height:1080px;position:relative;overflow:hidden;
   background:radial-gradient(900px 620px at 88% -8%, #efe9ff 0%, rgba(239,233,255,0) 62%),
              radial-gradient(820px 600px at 6% -6%, #ffe9f3 0%, rgba(255,233,243,0) 60%),
@@ -643,4 +644,13 @@ body{background:#0d1117;font-family:'Source Sans 3','Liberation Sans',sans-serif
   </div>
   <div class="pied"><span>Budget 2027 — annexe</span><span>10</span></div>
 </div>
+<script>
+/* mise a l'echelle : la planche 1920x1080 tient dans la fenetre (telephone, portable) */
+(function fit(){
+  if (window.innerWidth < 1900) document.body.style.zoom = window.innerWidth / 1940;
+})();
+window.addEventListener('resize', function(){
+  document.body.style.zoom = window.innerWidth < 1900 ? window.innerWidth / 1940 : 1;
+});
+</script>
 </body></html>
