@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Budget 2027 — présentation (maquette)</title>
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(fonts/font_10.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(fonts/font_12.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(fonts/font_11.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(fonts/font_13.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(fonts/font_08.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(fonts/font_09.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(fonts/font_07.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_10.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_12.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_11.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_13.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_08.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_09.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_07.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/font_10.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/font_12.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/font_11.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/font_13.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/font_08.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/font_09.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/font_07.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_10.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_12.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_11.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_13.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_08.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_09.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_07.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_01.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_04.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_02.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_06.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_03.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_00.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/font_05.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_01.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_04.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_02.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_06.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_03.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_00.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/font_05.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+:root{
+  --marge:96px; --g:26px;
+  --e1:8px; --e2:16px; --e3:24px; --e4:32px; --e5:48px; --e6:64px; --e7:96px;
+  --t-kicker:26px; --t-h1:78px; --t-display:150px; --t-sub:38px; --t-body:30px; --t-cap:22px;
+  --lh-t:1.06; --lh-c:1.55; --r:20px;
+  --accent:#533afd; --accent2:#3a28c9; --accent-pale:#eeecff; --prune:#7a2ff0;
+  --encre:#061b31; --corps:#243348; --vert:#12a94a; --rouge:#d1164e; --bord:#dfe8f2;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d1117;font-family:'Source Sans 3','Liberation Sans',sans-serif;
+     -webkit-font-smoothing:antialiased}
+.slide{width:1920px;height:1080px;position:relative;overflow:hidden;
+  background:radial-gradient(900px 620px at 88% -8%, #efe9ff 0%, rgba(239,233,255,0) 62%),
+             radial-gradient(820px 600px at 6% -6%, #ffe9f3 0%, rgba(255,233,243,0) 60%),
+             linear-gradient(#ffffff,#f6f9fc);
+  color:var(--encre);display:grid;grid-template-columns:repeat(12,1fr);
+  column-gap:var(--g);row-gap:var(--e4);padding:var(--marge);align-content:start}
+.fond{position:absolute;inset:0;z-index:0;pointer-events:none}
+.slide>*:not(.fond){z-index:1}
+
+.kicker{font-size:var(--t-kicker);font-weight:700;color:var(--accent);
+  letter-spacing:.14em;text-transform:uppercase}
+.h1{font-size:var(--t-h1);font-weight:700;line-height:var(--lh-t);letter-spacing:-1.6px}
+.sub{font-size:var(--t-sub);color:var(--corps);line-height:1.42}
+.trait{height:7px;background:var(--accent);border-radius:4px;width:132px}
+.ic{color:var(--accent);flex:0 0 auto}
+
+.cartes{display:grid;grid-template-columns:repeat(3,1fr);column-gap:var(--e6)}
+.carte{background:#fff;border:1px solid var(--bord);border-radius:var(--r);
+  padding:var(--e5);display:flex;flex-direction:column;gap:var(--e2);
+  box-shadow:0 2px 0 rgba(6,27,49,.03)}
+.carte .lab{font-size:32px;font-weight:700;line-height:1.25}
+.carte .corps{font-size:var(--t-body);line-height:var(--lh-c);color:var(--corps)}
+.carte .val{font-size:52px;font-weight:700;color:var(--accent2);font-variant-numeric:tabular-nums}
+
+.chip{display:inline-flex;align-items:center;gap:14px;background:var(--accent-pale);
+  border:1px solid #d9d3ff;border-radius:999px;padding:14px 26px;
+  font-size:26px;font-weight:700;color:#2a1a9e;justify-self:start}
+
+/* --- couverture : deux plans + diagonale (dispositif porteur) --- */
+.cover .plan{position:absolute;right:0;top:0;width:52%;height:100%;
+  background:linear-gradient(158deg,#3a28c9 0%,#533afd 52%,#7a2ff0 100%);
+  clip-path:polygon(30% 0,100% 0,100% 100%,0 100%);z-index:0}
+.cover .plan::after{content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(118deg,rgba(255,255,255,.11) 0 2px,transparent 2px 46px)}
+.cover .anneau{position:absolute;right:8%;top:16%;width:420px;height:420px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.5);z-index:0}
+.cover .anneau::after{content:'';position:absolute;inset:74px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.32)}
+.cover .anneau::before{content:'';position:absolute;inset:150px;border-radius:50%;
+  background:rgba(255,255,255,.14)}
+.cover .bloc{grid-column:1/7;align-self:center;display:flex;flex-direction:column;gap:38px}
+.cover .titre{font-size:var(--t-display);font-weight:700;line-height:1.06;letter-spacing:-4px}
+.cover .titre em{font-style:normal;color:var(--accent)}
+.cover .mention{font-size:24px;color:#5b6b80}
+
+/* --- écart : barres comparées --- */
+.barres{background:none;border:0;padding:0;box-shadow:none;
+  display:flex;flex-direction:column;gap:34px}
+.barre{display:grid;grid-template-columns:360px 1fr 250px;align-items:center;gap:28px}
+.barre .an{font-size:30px;font-weight:700;color:var(--corps)}
+.barre .piste{height:74px;background:#eef2f7;border-radius:12px;overflow:hidden}
+.barre .piste i{display:block;height:100%;border-radius:12px}
+.barre .v{font-size:44px;font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.barre.total .piste i{background:linear-gradient(90deg,var(--accent2),var(--accent))}
+.barre.ecart .piste i{background:linear-gradient(90deg,#8a72ff,var(--prune))}
+
+/* --- répartition : barres par poste --- */
+.rep{background:none;border:0;padding:0;box-shadow:none;
+  display:flex;flex-direction:column;gap:24px}
+.ligne{display:grid;grid-template-columns:520px 1fr 200px;align-items:center;gap:26px;
+  font-size:29px}
+.ligne .nom{color:var(--corps);font-weight:600}
+.ligne .jauge{height:48px;background:#eef2f7;border-radius:10px;overflow:hidden}
+.ligne .jauge i{display:block;height:100%;background:var(--accent);border-radius:10px}
+.ligne .pc{text-align:right;font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent2)}
+
+/* --- avant / après --- */
+.avant-apres{grid-template-columns:1fr 1fr}
+.panneau{border-radius:var(--r);padding:var(--e5);display:flex;flex-direction:column;
+  gap:var(--e4);border:1px solid var(--bord);background:#fff}
+.panneau.avant{border-top:9px solid var(--rouge)}
+.panneau.apres{border-top:9px solid var(--vert);background:#f5fcf8}
+.panneau .entete{font-size:27px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  display:flex;align-items:center;gap:14px}
+.panneau.avant .entete{color:var(--rouge)}
+.panneau.apres .entete{color:#0b6b31}
+.bloc-txt{display:flex;flex-direction:column;gap:10px}
+.bloc-txt .t{font-size:30px;font-weight:700;color:var(--encre)}
+.bloc-txt .d{font-size:30px;line-height:1.5;color:var(--corps)}
+
+/* --- flux --- */
+.flux{grid-template-columns:repeat(4,1fr)}
+.flux .etape{background:#fff;border:2px solid var(--accent);border-radius:var(--r);
+  padding:var(--e5);display:flex;flex-direction:column;gap:var(--e2);position:relative}
+.flux .etape .num{width:58px;height:58px;border-radius:50%;background:var(--accent);color:#fff;
+  font-size:27px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.flux .etape .lab{font-size:30px;font-weight:700}
+.flux .etape .corps{font-size:30px;line-height:1.45;color:var(--corps)}
+.flux .etape:not(:last-child)::after{content:'';position:absolute;top:50%;right:0;
+  width:18px;height:18px;border-top:5px solid var(--accent);border-right:5px solid var(--accent);
+  transform:translate(calc(100% + var(--e6)/2),-50%) rotate(45deg)}
+
+/* --- demande --- */
+.demande .gauche{grid-column:1/8;display:flex;flex-direction:column;gap:var(--e4)}
+.demande .carte-alt{grid-column:8/-1;background:var(--accent-pale);border:1px solid #d9d3ff;
+  border-radius:var(--r);padding:var(--e5);display:flex;flex-direction:column;gap:var(--e2);
+  box-shadow:none}
+.demande .carte-alt .t{font-size:28px;font-weight:700;color:#2a1a9e;text-transform:uppercase;
+  letter-spacing:.1em}
+
+.pied{position:absolute;left:var(--marge);right:var(--marge);bottom:96px;z-index:1;
+  display:flex;justify-content:space-between;font-size:22px;color:#8593a6;
+  border-top:1px solid var(--bord);padding-top:16px}
+</style></head>
+<body>
+<div class="slide cover">
+  <div class="fond"></div><div class="plan"></div><div class="anneau"></div>
+  <div class="bloc">
+    <div class="kicker">Présentation au comité de direction</div>
+    <div class="titre">Budget<br><em>2027</em></div>
+    <div class="sub">Enveloppe demandée, écarts et priorités</div>
+    <div class="mention">Maquette de démonstration — chiffres illustratifs, non réels.</div>
+  </div>
+  <div class="pied"><span>Budget 2027</span><span>Décembre 2026</span></div>
+</div><div class="slide">
+  <div class="fond"></div>
+  <div class="chip" style="grid-column:1/8"><svg class="ic" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></g></svg>Décision demandée</div>
+  <div class="h1" style="grid-column:1/11">Approuver une enveloppe de 4,82 M$</div>
+  <div class="trait" style="grid-column:1/3"></div>
+  <div class="sub" style="grid-column:1/9">Pour l'exercice 2027, en hausse de 10,8 % sur 2026. La décision porte sur l'enveloppe et sur les quatre postes prévus ; le détail est en annexe.</div>
+  <div style="grid-column:1/6;display:flex;flex-direction:column;gap:10px">
+    <div style="font-size:150px;font-weight:700;line-height:1.0;letter-spacing:-5px;color:var(--accent)">4,82&nbsp;M$</div>
+    <div class="sub">Total 2027 demandé</div>
+  </div>
+  <div class="cartes" style="grid-column:6/-1;grid-template-columns:1fr 1fr;align-content:center">
+    <div class="carte" style="padding:40px"><div class="val">+470&nbsp;k$</div><div class="lab" style="font-size:30px">Écart sur 2026</div></div>
+    <div class="carte" style="padding:40px"><div class="val">+10,8&nbsp;%</div><div class="lab" style="font-size:30px">Variation</div></div>
+  </div>
+  <div class="pied"><span>Budget 2027 — la décision</span><span>2</span></div>
+</div><div class="slide">
+  <div class="fond"></div>
+  <div class="kicker" style="grid-column:1/7">L'écart</div>
+  <div class="h1" style="grid-column:1/11">Le budget passe de 4,35 à 4,82 M$</div>
+  <div class="trait" style="grid-column:1/3"></div>
+  <div class="carte barres" style="grid-column:1/-1">
+    <div class="barre total">
+      <div class="an">2026 approuvé</div>
+      <div class="piste"><i style="width:90.2%"></i></div>
+      <div class="v">4,35&nbsp;M$</div>
+    </div>
+    <div class="barre total">
+      <div class="an">2027 demandé</div>
+      <div class="piste"><i style="width:100%"></i></div>
+      <div class="v">4,82&nbsp;M$</div>
+    </div>
+    <div class="barre ecart">
+      <div class="an">Écart</div>
+      <div class="piste"><i style="width:9.8%"></i></div>
+      <div class="v">+470&nbsp;k$</div>
+    </div>
+  </div>
+  <div class="sub" style="grid-column:1/11">La hausse de 10,8 % finance l'indexation, quatre nouveaux postes et le renouvellement des licences.</div>
+  <div class="pied"><span>Budget 2027 — l'écart</span><span>3</span></div>
+</div><div class="slide">
+  <div class="fond"></div>
+  <div class="kicker" style="grid-column:1/7">Les moteurs de l'écart</div>
+  <div class="h1" style="grid-column:1/11">Trois raisons expliquent +470 k$</div>
+  <div class="trait" style="grid-column:1/3"></div>
+  <div class="cartes" style="grid-column:1/-1">
+<div class="carte"><div class="val">+320&nbsp;k$</div><div class="lab">Masse salariale</div><div class="corps">Indexation de 2,8 % sur l'ensemble des effectifs, plus les quatre postes prévus.</div></div>
+<div class="carte"><div class="val">+95&nbsp;k$</div><div class="lab">Technologies</div><div class="corps">Renouvellement de licences arrivées à échéance et deux outils de suivi.</div></div>
+<div class="carte"><div class="val">+55&nbsp;k$</div><div class="lab">Locaux et maintenance</div><div class="corps">Contrats de maintenance révisés et charges locatives.</div></div>
+  </div>
+  <div class="sub" style="grid-column:1/11">Les trois postes sont classés par ordre d'importance ; ensemble, ils couvrent l'intégralité de la hausse.</div>
+  <div class="pied"><span>Budget 2027 — les moteurs</span><span>4</span></div>
+</div><div class="slide">
+  <div class="fond"></div>
+  <div class="kicker" style="grid-column:1/7">Répartition</div>
+  <div class="h1" style="grid-column:1/11">Où va chaque dollar</div>
+  <div class="trait" style="grid-column:1/3"></div>
+  <div class="carte rep" style="grid-column:1/-1">
+<div class="ligne"><div class="nom">Ressources humaines</div><div class="jauge"><i style="width:100%"></i></div><div class="pc">55,6&nbsp;%</div></div>
+<div class="ligne"><div class="nom">Technologies</div><div class="jauge"><i style="width:32.4%"></i></div><div class="pc">18,0&nbsp;%</div></div>
+<div class="ligne"><div class="nom">Locaux et maintenance</div><div class="jauge"><i style="width:23.2%"></i></div><div class="pc">12,9&nbsp;%</div></div>
+<div class="ligne"><div class="nom">Services et fournitures</div><div class="jauge"><i style="width:15.3%"></i></div><div class="pc">8,5&nbsp;%</div></div>
+<div class="ligne"><div class="nom">Réserve de précaution</div><div class="jauge"><i style="width:9.0%"></i></div><div class="pc">5,0&nbsp;%</div></div>
+  </div>
+  <div class="sub" style="grid-column:1/11">Les ressources humaines restent le premier poste ; une réserve de 5 % couvre les imprévus.</div>
+  <div class="pied"><span>Budget 2027 — répartition</span><span>5</span></div>
+</div><div class="slide">
+  <div class="fond"></div>
+  <div class="kicker" style="grid-column:1/7">Les hypothèses</div>
+  <div class="h1" style="grid-column:1/11">Trois paris, énoncés franchement</div>
+  <div class="trait" style="grid-column:1/3"></div>
+  <div class="cartes" style="grid-column:1/-1">
+<div class="carte"><svg class="ic" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11l3 3L22 4"/></g></svg><div class="lab">Indexation salariale</div><div class="corps">2,8 % appliqués uniformément, sans mesure catégorielle.</div></div>
+<div class="carte"><svg class="ic" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11l3 3L22 4"/></g></svg><div class="lab">Quatre postes, pas plus</div><div class="corps">Aucune embauche hors des quatre postes prévus au plan.</div></div>
+<div class="carte"><svg class="ic" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11l3 3L22 4"/></g></svg><div class="lab">Inflation et taux stables</div><div class="corps">Aucun choc de change ni de taux dans le scénario central.</div></div>
+  </div>
+  <div class="sub" style="grid-column:1/11">Ce sont les points où le comité doit nous interroger : si l'une tombe, le scénario change de forme.</div>
+  <div class="pied"><span>Budget 2027 — hypothèses</span><span>6</span></div>
+</div><div class="slide">
+  <div class="fond"></div>
+  <div class="kicker" style="grid-column:1/7">Risques et parades</div>
+  <div class="h1" style="grid-column:1/11">Deux risques, deux réponses</div>
+  <div class="trait" style="grid-column:1/3"></div>
+  <div class="cartes avant-apres" style="grid-column:1/-1">
+    <div class="panneau avant"><div class="entete"><svg class="ic" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21.73 18l-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3M12 9v4m0 4h.01"/></svg>Risque identifié</div>
+<div class="bloc-txt"><div class="t">Dépassement des licences</div><div class="d">Coûts révisés en cours d'année, sans plafond contractuel.</div></div>
+<div class="bloc-txt"><div class="t">Retard de dotation</div><div class="d">Recrutement étalé, non sécurisé par un calendrier.</div></div>
+    </div>
+    <div class="panneau apres"><div class="entete"><svg class="ic" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12l2 2l4-4"/></g></svg>Parade retenue</div>
+<div class="bloc-txt"><div class="t">Plafonds contractuels</div><div class="d">Clause de plafond négociée et suivi trimestriel des consommations.</div></div>
+<div class="bloc-txt"><div class="t">Échelonnement sur deux trimestres</div><div class="d">Dotation séquencée, avec un point d'étape à mi-parcours.</div></div>
+    </div>
+  </div>
+  <div class="pied"><span>Budget 2027 — risques</span><span>7</span></div>
+</div><div class="slide">
+  <div class="fond"></div>
+  <div class="kicker" style="grid-column:1/7">Le calendrier</div>
+  <div class="h1" style="grid-column:1/11">Quatre étapes, de septembre à décembre</div>
+  <div class="trait" style="grid-column:1/3"></div>
+  <div class="cartes flux" style="grid-column:1/-1">
+<div class="etape"><div class="num">1</div><div class="lab">Cadrage</div><div class="corps">Lettre de cadrage et enveloppes indicatives.</div></div>
+<div class="etape"><div class="num">2</div><div class="lab">Propositions</div><div class="corps">Chaque direction remonte ses besoins.</div></div>
+<div class="etape"><div class="num">3</div><div class="lab">Arbitrages</div><div class="corps">Priorisation et équilibrage.</div></div>
+<div class="etape"><div class="num">4</div><div class="lab">Approbation</div><div class="corps">Vote du comité et notification.</div></div>
+  </div>
+  <div class="sub" style="grid-column:1/11">Le calendrier est décisionnel : chaque étape produit une décision datée, pas un document de plus.</div>
+  <div class="pied"><span>Budget 2027 — calendrier</span><span>8</span></div>
+</div><div class="slide demande">
+  <div class="fond"></div>
+  <div class="kicker" style="grid-column:1/7">La demande</div>
+  <div class="h1" style="grid-column:1/9">Approuver 4,82 M$ et les quatre postes</div>
+  <div class="trait" style="grid-column:1/3"></div>
+  <div class="gauche">
+    <div class="sub">L'approbation demandée porte sur l'enveloppe globale et sur la création des quatre postes. Le reste s'exécute dans les cadres existants.</div>
+    <div class="chip" style="justify-self:start"><svg class="ic" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11l3 3L22 4"/></g></svg>Vote attendu : décembre 2026</div>
+  </div>
+  <div class="carte carte-alt">
+    <div class="t">Si le comité refuse</div>
+    <div class="corps" style="font-size:30px">Sans l'enveloppe, le budget revient à 4,35 M$ : les quatre postes sont retirés et l'indexation est gelée. L'écart se reportera sur l'exercice suivant.</div>
+  </div>
+  <div class="pied"><span>Budget 2027 — la demande</span><span>9</span></div>
+</div><div class="slide">
+  <div class="fond"></div>
+  <div class="kicker" style="grid-column:1/7">Annexe</div>
+  <div class="h1" style="grid-column:1/11">Le détail, ligne par ligne</div>
+  <div class="trait" style="grid-column:1/3"></div>
+  <div class="cartes" style="grid-column:1/-1">
+<div class="carte" style="padding:34px"><div class="val" style="font-size:44px">2,68 M$</div><div class="lab" style="font-size:28px">Ressources humaines</div><div class="corps" style="font-size:30px">42 postes, indexation comprise.</div></div>
+<div class="carte" style="padding:34px"><div class="val" style="font-size:44px">0,87 M$</div><div class="lab" style="font-size:28px">Technologies</div><div class="corps" style="font-size:30px">Licences, outils, hébergement.</div></div>
+<div class="carte" style="padding:34px"><div class="val" style="font-size:44px">0,62 M$</div><div class="lab" style="font-size:28px">Locaux et maintenance</div><div class="corps" style="font-size:30px">Baux, charges, contrats.</div></div>
+  </div>
+  <div class="cartes" style="grid-column:1/-1">
+<div class="carte" style="padding:34px"><div class="val" style="font-size:44px">0,41 M$</div><div class="lab" style="font-size:28px">Services et fournitures</div><div class="corps" style="font-size:30px">Prestataires et achats courants.</div></div>
+<div class="carte" style="padding:34px"><div class="val" style="font-size:44px">0,24 M$</div><div class="lab" style="font-size:28px">Réserve de précaution</div><div class="corps" style="font-size:30px">Imprévus, sans engagement.</div></div>
+<div class="carte" style="padding:34px"><div class="val" style="font-size:44px">4,82 M$</div><div class="lab" style="font-size:28px">Total demandé</div><div class="corps" style="font-size:30px">Enveloppe pour 2027.</div></div>
+  </div>
+  <div class="pied"><span>Budget 2027 — annexe</span><span>10</span></div>
+</div>
+</body></html>
